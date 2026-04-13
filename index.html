@@ -249,8 +249,8 @@ button, input, textarea {
 
 .nav-overlay a {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 300;
+  font-size: 14pt;
+  font-weight: 400;
   color: var(--text-light);
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
@@ -1557,6 +1557,27 @@ footer .container {
   .feature-project-image-wrap img {
     height: 50vw;
     min-height: 280px;
+  }
+
+  .fp2-layout {
+    flex-direction: column;
+  }
+
+  .fp2-image {
+    width: 100%;
+    order: -1;
+  }
+
+  .fp2-image img {
+    height: 35vw;
+    min-height: 130px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #fp-coast-salish .fp2-image,
+  #fp-indigiversal .fp2-image {
+    width: 100%;
   }
 
   .murals-header .container {
