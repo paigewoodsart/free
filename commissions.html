@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commissions &amp; RFP | Free Borsey (Tsx'vilum)</title>
+<meta name="description" content="Commission information and RFP details for Tsx'vilum Free Borsey, Lummi Nation muralist and public artist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================
+   CSS CUSTOM PROPERTIES
+   =========================== */
+:root {
+  --bg-dark:    #20222A;
+  --bg-light:   #EDE8DA;
+  --nav-dark:   #252830;
+  --red:        #8B1A1A;
+  --marigold:   #C8841A;
+  --text-light: #F2EDE0;
+  --text-dark:  #252830;
+}
+
+[data-theme="light"] {
+  --bg:         var(--bg-light);
+  --nav:        #E4DFD1;
+  --text:       var(--text-dark);
+  --text-muted: #6b6355;
+  --border:     rgba(37,40,48,0.12);
+}
+
+[data-theme="dark"] {
+  --bg:         var(--bg-dark);
+  --nav:        var(--nav-dark);
+  --text:       var(--text-light);
+  --text-muted: rgba(242,237,224,0.5);
+  --border:     rgba(242,237,224,0.1);
+}
+
+/* ===========================
+   BASE
+   =========================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  background: var(--red);
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover { background: #a32020; }
+
+.btn-ghost {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--text-muted);
+  color: var(--text);
+  padding: 0.7rem 1.2rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'Source Sans 3', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.btn-ghost:hover { border-color: var(--marigold); color: var(--marigold); }
+
+.serif { font-family: 'Cormorant Garamond', serif; }
+
+.section-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ===========================
+   NAV
+   =========================== */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: var(--nav);
+  border-bottom: 1px solid var(--border);
+  height: 56px;
+}
+
+.nav-inner-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nav-wordmark span {
+  opacity: 0.55;
+  font-style: italic;
+  margin-left: 0.4em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-reach-out {
+  background: none;
+  border: 1px solid var(--marigold);
+  color: var(--marigold);
+  cursor: pointer;
+  padding: 5px 14px;
+  font-size: 0.72rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn-reach-out:hover { background: var(--marigold); color: #fff; }
+
+.nav-instagram {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.nav-instagram:hover { color: var(--marigold); }
+.nav-instagram svg {
+  width: 18px; height: 18px;
+  fill: none; stroke: currentColor;
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--text);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--nav);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-overlay.open { display: flex; }
+.nav-overlay a {
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-overlay a:hover { color: var(--marigold); }
+.nav-overlay .overlay-close {
+  position: absolute;
+  top: 1.25rem; right: 1.5rem;
+  background: none; border: none;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .btn-reach-out { display: none; }
+  .nav-instagram { display: none; }
+}
+
+/* ===========================
+   PAGE HEADER
+   =========================== */
+.page-header {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+.page-header-inner {
+  border-left: 3px solid var(--red);
+  padding-left: 1.5rem;
+}
+
+.page-header-kicker {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.page-header-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* ===========================
+   CAPABILITIES GRID
+   =========================== */
+.commissions-section {
+  padding-bottom: 100px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.capability-item {
+  padding: 2rem 1.75rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.capability-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.capability-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  font-weight: 300;
+  color: var(--text);
+  margin-bottom: 0.65rem;
+  line-height: 1.2;
+}
+
+.capability-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .capabilities-grid { grid-template-columns: 1fr; }
+}
+
+/* ===========================
+   COMMISSION CTA
+   =========================== */
+.commission-cta {
+  padding: 60px 0 100px;
+  border-top: 1px solid var(--border);
+}
+
+.commission-cta-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.commission-cta h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.15;
+  max-width: 460px;
+}
+
+.commission-cta-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ===========================
+   INDIGENOUS CONSULTATION SECTION
+   =========================== */
+.why-indigenous {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.why-indigenous-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.why-indigenous-intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.why-indigenous-intro strong {
+  font-weight: 500;
+  color: var(--red);
+}
+
+.expertise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.expertise-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.expertise-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.expertise-item-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.expertise-item-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.why-pull-quote {
+  grid-column: 1 / -1;
+  border-left: 3px solid var(--red);
+  padding: 1.5rem 0 1.5rem 2rem;
+  margin-top: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+@media (max-width: 860px) {
+  .why-indigenous-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .why-pull-quote { grid-column: 1; }
+}
+
+/* ===========================
+   REACH OUT MODAL
+   =========================== */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(8,18,34,0.7);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-backdrop.open { display: flex; }
+
+.modal-card {
+  background: #0d1f38;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 3rem 2.25rem 2.5rem;
+  max-width: 460px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 300;
+  color: #F2EDE0;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.modal-sub {
+  font-size: 0.88rem;
+  color: rgba(242,237,224,0.55);
+  margin: 0 0 2.25rem;
+  letter-spacing: 0.04em;
+}
+
+.modal-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-option-btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.85rem 1.4rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
+  color: #F2EDE0;
+  border: 1px solid rgba(242,237,224,0.3);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgba(242,237,224,0.15) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right center;
+  transition: background-position 0.35s ease, border-color 0.25s ease, color 0.25s ease;
+}
+.modal-option-btn:hover {
+  background-position: left center;
+  border-color: rgba(242,237,224,0.6);
+  color: #fff;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  color: rgba(242,237,224,0.4);
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: #F2EDE0; }
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background: var(--nav);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.footer-roles {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.footer-nation {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner-wrap">
+    <a href="index.html" class="nav-wordmark">Free Borsey <span>Tsx'vilum</span></a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#murals">Installations</a></li>
+      <li><a href="index.html#experience">Impact</a></li>
+      <li><a href="https://ephemeralmade.com" target="_blank" rel="noopener">Shop</a></li>
+      <li><a href="index.html#press">Press</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="btn-reach-out" id="reachOutBtn" aria-haspopup="dialog">Reach Out</button>
+      <a href="https://www.instagram.com/morningstar_borsey/" target="_blank" rel="noopener" class="nav-instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <button class="hamburger" aria-label="Open menu" id="hamburger" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay" aria-hidden="true">
+  <button class="overlay-close" id="overlayClose" aria-label="Close menu">Close</button>
+  <a href="index.html#about" class="overlay-link">About</a>
+  <a href="index.html#murals" class="overlay-link">Installations</a>
+  <a href="index.html#experience" class="overlay-link">Impact</a>
+  <a href="https://ephemeralmade.com" target="_blank" rel="noopener" class="overlay-link">Shop</a>
+  <a href="index.html#press" class="overlay-link">Press</a>
+</div>
+
+
+<!-- ===========================
+     PAGE HEADER
+     =========================== -->
+<div class="page-header">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <h1>Consulting &amp;<br>Commissions</h1>
+      <p class="page-header-sub">Free Borsey is available for public art commissions, RFP submissions, and cultural consultation. The following outlines his capabilities and approach for project teams and selection committees.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===========================
+     CAPABILITIES GRID
+     =========================== -->
+<section class="commissions-section" aria-label="Commissions and capabilities">
+  <div class="container">
+    <span class="section-label reveal">Capabilities</span>
+    <h2 class="serif reveal" style="font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; margin-bottom: 0;">What Free Brings to a Project</h2>
+
+    <div class="capabilities-grid">
+      <div class="capability-item reveal">
+        <div class="capability-label">Wall Scale</div>
+        <div class="capability-value">No Limits</div>
+        <p class="capability-note">From 80-foot commission murals to 150-foot festival works. Scale is a feature of the practice, not a constraint.</p>
+      </div>
+      <div class="capability-item reveal reveal-delay-1">
+        <div class="capability-label">Materials</div>
+        <div class="capability-value">Paint, Projection, Mixed Media</div>
+        <p class="capability-note">Exterior and interior paint. Nighttime projection mapping layers. Mixed media installations. Each project uses what the story requires.</p>
+      </div>
+      <div class="capability-item reveal reveal-delay-2">
+        <div class="capability-label">Work Mode</div>
+        <div class="capability-value">Team and Solo</div>
+        <p class="capability-note">Experience leading creative direction across collaborative teams and executing independently. Comfortable at both scales.</p>
+      </div>
+      <div class="capability-item reveal">
+        <div class="capability-label">Travel</div>
+        <div class="capability-value">Available</div>
+        <p class="capability-note">Available for commissions beyond Bellingham and the Pacific Northwest.</p>
+      </div>
+      <div class="capability-item reveal reveal-delay-1">
+        <div class="capability-label">Cultural Scope</div>
+        <div class="capability-value">Coast Salish and Cross-Tribal</div>
+        <p class="capability-note">Grounded in Coast Salish tradition, with experience collaborating across tribal nations as part of multi-artist projects.</p>
+      </div>
+      <div class="capability-item reveal reveal-delay-2">
+        <div class="capability-label">Community Integration</div>
+        <div class="capability-value">Standard Practice</div>
+        <p class="capability-note">Community engagement, youth programming, and cultural consultation are part of every project. The work is not delivered to a community. It is built with one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     WHY INDIGENOUS CONSULTATION
+     =========================== -->
+<section class="why-indigenous" aria-label="Why Indigenous consultation matters">
+  <div class="container">
+    <h2 class="serif reveal" style="font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; margin-bottom: 0;">Why Indigenous Consultation Matters</h2>
+
+    <div class="why-indigenous-layout">
+
+      <div class="why-indigenous-intro reveal reveal-delay-1">
+        <p>Public art doesn't exist in a vacuum. Every wall, every plaza, every waterfront installation sits on land with a history, an ecology, and a living culture. When that context is missing from the design process, the work shows it.</p>
+        <br>
+        <p>Bringing an Indigenous consultant into a project from the beginning, not as a finishing gesture, is how you build work that belongs to a place. Free Borsey carries <strong>deep knowledge of the Coast Salish territory</strong> and the communities whose stories and relationships with the land make that territory what it is. His perspective transforms a good project into one that earns its place.</p>
+        <br>
+        <p>His expertise extends well beyond the visual. Free brings years of grounded knowledge across environmental science, cultural education, community organizing, and Indigenous advocacy, making him a collaborator who strengthens a project at every layer.</p>
+      </div>
+
+      <div class="expertise-list reveal reveal-delay-2">
+        <div class="expertise-item">
+          <div class="expertise-item-title">Environmental Knowledge</div>
+          <p class="expertise-item-desc">Trained through years of work with Children of the Setting Sun Productions and the Setting Sun Institute, Free brings Indigenous ecological knowledge — reef net systems, clam garden stewardship, Salish Sea ecology — that formal environmental science frequently overlooks.</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-item-title">Cultural Accuracy &amp; Sensitivity</div>
+          <p class="expertise-item-desc">Coast Salish oral literature, ceremony, traditional technology, and place names are not interchangeable or generic. Free ensures that imagery, language, and representation are grounded in the specific territory and community being honored, not borrowed broadly from "Indigenous culture."</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-item-title">Community Relationships</div>
+          <p class="expertise-item-desc">Authentic community engagement requires trust that is built over years, not acquired through process. Free's relationships with Lummi Nation leadership, elders, and the broader Coast Salish community open doors that a standard outreach process cannot.</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-item-title">Advocacy &amp; Legislative Fluency</div>
+          <p class="expertise-item-desc">From Washington Conservation Action to the Climate Protection Act, Free has navigated Indigenous priorities at the policy level. He understands how to frame projects within regulatory and funding landscapes that touch on Tribal rights, consultation requirements, and environmental justice.</p>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-item-title">Youth &amp; Education Programming</div>
+          <p class="expertise-item-desc">Free brings experience designing intergenerational programs that center Indigenous youth as participants, not subjects. Projects with an educational or community engagement component benefit from this lens from the start.</p>
+        </div>
+      </div>
+
+      <blockquote class="why-pull-quote reveal">
+        "The land already has a story. The job is to listen before you make anything."
+        <cite style="display:block; margin-top:0.75rem; font-size:0.78rem; font-family:'Source Sans 3',sans-serif; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted);">Tsx'vilum Free Borsey</cite>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     COMMISSION CTA
+     =========================== -->
+<section class="commission-cta" aria-label="Start a commission">
+  <div class="container">
+    <div class="commission-cta-inner">
+      <h2 class="serif reveal">Ready to begin<br>a conversation?</h2>
+      <div class="commission-cta-actions reveal reveal-delay-1">
+        <button class="btn" id="reachOutBtnCta">Reach Out</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     REACH OUT MODAL
+     =========================== -->
+<div class="modal-backdrop" id="reachOutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <p class="modal-title" id="modalTitle">Reach Out</p>
+    <p class="modal-sub">Start a conversation with Free Borsey.</p>
+    <div class="modal-options">
+      <a href="#" class="modal-option-btn" id="consultLink">Book a free 30 minute consultation</a>
+      <a href="mailto:freeborsey@gmail.com" class="modal-option-btn">Email Free &mdash; freeborsey@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===========================
+     FOOTER
+     =========================== -->
+<footer>
+  <div class="container">
+    <div class="footer-name">Tsx'vilum Free Borsey</div>
+    <div class="footer-nation">&copy; 2026 Tsx'vilum Free Borsey</div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  'use strict';
+
+  var hamburger = document.getElementById('hamburger');
+  var navOverlay = document.getElementById('navOverlay');
+  var overlayClose = document.getElementById('overlayClose');
+  var overlayLinks = navOverlay.querySelectorAll('.overlay-link');
+
+  function openNav() {
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    navOverlay.classList.add('open');
+    navOverlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeNav() {
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    navOverlay.classList.remove('open');
+    navOverlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', function () {
+    hamburger.contains.open ? closeNav() : openNav();
+    if (hamburger.classList.contains('open')) { closeNav(); } else { openNav(); }
+  });
+
+  overlayClose.addEventListener('click', closeNav);
+  overlayLinks.forEach(function (link) { link.addEventListener('click', closeNav); });
+
+  /* Scroll reveal */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { obs.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* Modal */
+  var modal = document.getElementById('reachOutModal');
+  var reachOutBtn = document.getElementById('reachOutBtn');
+  var reachOutBtnCta = document.getElementById('reachOutBtnCta');
+
+  function openModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('.modal-close').focus();
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (modal) {
+    if (reachOutBtn) reachOutBtn.addEventListener('click', openModal);
+    if (reachOutBtnCta) reachOutBtnCta.addEventListener('click', openModal);
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  }
+
+})();
+</script>
+
+</body>
+</html>
